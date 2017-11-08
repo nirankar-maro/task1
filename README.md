@@ -9,7 +9,7 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 - Gallery Module
 
 ## Model
-- User - Devise
+- x User - Devise
 - Images - name:string image_name:string
 - ContactUs Form
 
