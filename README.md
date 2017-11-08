@@ -17,4 +17,4 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 - Workflow
 
 ## UI
-- Bootstrap -> formatting
+- XBootstrap -> formatting

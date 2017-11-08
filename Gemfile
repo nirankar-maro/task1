@@ -50,3 +50,5 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 gem 'devise', '~> 4.3'
+gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
