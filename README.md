@@ -4,7 +4,7 @@
 This is task 1 contain authentication with devise then have 3 pages Home Contact Gallery use to see the file directory.
 
 ## Things to cover:
-- index page
+- xindex page
 - Contact Us page
 - Gallery Module
 
