@@ -5,7 +5,7 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 
 ## Things to cover:
 - xindex page
-- Contact Us page
+- xContact Us page
 - Gallery Module
 
 ## Model
@@ -15,6 +15,9 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 
 ## Feature
 - Workflow
+- growl notification
+- active_admin gem
+- kaminari for pagination
 
 ## UI
 - XBootstrap -> formatting

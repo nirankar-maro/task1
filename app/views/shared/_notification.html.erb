@@ -1,0 +1,22 @@
+<% if flash[:alert] %>
+  <div class="alert alert-warning">
+    <strong>Alert!</strong> <%= flash[:alert]%>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+
+  </div>
+  <!-- js add_gritter(flash[:alert], title: "DailySmarty Alert", sticky: false) %> -->
+<% elsif flash[:error] %>
+  <div class="alert alert-danger">
+    <strong>Error!</strong> <%= flash[:error]%>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+
+  </div>
+  <!-- js add_gritter(flash[:error], title: "DailySmarty Error", sticky: false) %> -->
+<% elsif flash[:notice] %>
+  <div class="alert alert-success">
+    <strong>Success!</strong> <%= flash[:notice]%>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+
+  </div>
+   <!-- js add_gritter(flash[:notice], title: "DailySmarty Notification", sticky: false) %> -->
+<% end %>
