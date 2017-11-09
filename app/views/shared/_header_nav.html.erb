@@ -1,18 +1,18 @@
 <ul class="nav nav-tabs">
-  <li class="active">
+  <li class="<%= active?(root_path)%>">
     <a href="<%= root_path%>">Home</a>
   </li>
-  <li>
+  <li >
     <a href="#">Gallery</a>
   </li>
-  <li>
+  <li class="<%= active?(contact_details_path)%>">
     <a href="<%= contact_details_path%>">Contact Us</a>
   </li>
   <li class="dropdown pull-right">
      <a href="#" data-toggle="dropdown" class="dropdown-toggle">Action<strong class="caret"></strong></a>
     <ul class="dropdown-menu">
       <li>
-        <a href="#">Log Out</a>
+        <%= link_to "Log Out", destroy_user_session_path, method: :delete%>
       </li>
     </ul>
   </li>
