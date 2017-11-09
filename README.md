@@ -15,7 +15,7 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 
 ## Feature
 - Workflow
-- growl notification
+- xgrowl notification
 - active_admin gem
 - kaminari for pagination
 
