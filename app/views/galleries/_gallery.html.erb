@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <%= gallery.id %>
+  </td>
+  <td>
+    <%= gallery.name %>
+  </td>
+  <td>
+    <img  src="<%= gallery.image_url %>" width="50" height="50">
+  </td>
+  <td>
+    <%= link_to '',edit_gallery_path(gallery),id: "edit_#{gallery.id}",class:"fa fa-pencil"  %>
+  </td>
+  <td>
+    <%= link_to '',gallery_path(gallery),method: :delete,data: {confirm: "Are You Sure?"},class:"fa fa-trash"   %>
+  </td>
+</tr>

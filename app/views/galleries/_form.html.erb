@@ -1,0 +1,25 @@
+<%= form_for @gallery,:html => {:class => "form-inline gallery-new"} do |f| %>
+<% if @gallery.errors.any? %>
+  <% @gallery.errors.full_messages.each do |error| %>
+    <%=  js add_gritter(error, title: "Task1 Notification", sticky: false,time: 5000) %>
+  <% end%>
+  <%end%>
+  <div class="form-group">
+    <label for="name">
+      Name
+    </label>
+
+      <%= f.text_field :name, class: "form-control", required: true %>
+  </div>
+  <div class="form-group">
+    <label for="image">
+      Image
+    </label>
+
+      <%= f.file_field :image, class: "form-control", required: true %>
+
+  </div>
+  <div class="form-group">
+      <%= f.submit "submit",class: "btn btn-success btn-block"%>
+  </div>
+<% end %>

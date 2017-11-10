@@ -6,12 +6,12 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 ## Things to cover:
 - xindex page
 - xContact Us page
-- Gallery Module
+- xGallery Module
 
 ## Model
 - x User - Devise
-- Images - name:string image_name:string
-- ContactUs Form
+- xImages - name:string image:string
+- xContactUs Form
 
 ## Feature
 - Workflow
