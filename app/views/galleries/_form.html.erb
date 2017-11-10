@@ -9,7 +9,7 @@
       Name
     </label>
 
-      <%= f.text_field :name, class: "form-control", required: true %>
+      <%= f.text_field :name, class: "form-control", required: true,id:"input" %>
   </div>
   <div class="form-group">
     <label for="image">
@@ -20,6 +20,27 @@
 
   </div>
   <div class="form-group">
-      <%= f.submit "submit",class: "btn btn-success btn-block"%>
+      <%= f.submit "submit",class: "btn btn-success btn-block",id: 'submit'%>
   </div>
 <% end %>
+<script>
+(function() {
+    $('#input').keyup(function() {
+
+        var empty = false;
+        $('#input').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#submit').attr('disabled', 'disabled');
+        } else {
+            $('#submit').removeAttr('disabled');
+        }
+    });
+})()
+
+
+</script>
