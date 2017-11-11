@@ -19,7 +19,7 @@ class GalleriesController < ApplicationController
   def edit
   end
   def update
-    if @gallery.update(gallery_params)
+    if @gallery.update(gallery_create_params)
       redirect_to galleries_path,notice: "Image Edited Successfully"
     else
       render :edit
