@@ -7,7 +7,12 @@ class ContactDetailsController < ApplicationController
   def create
     @contact_detail = ContactDetail.new(contact_us_params)
     if @contact_detail.save
+      #Thread.new{
+        UserMailer.welcome_email(@contact_detail).deliver_now
+      #}
+
       redirect_to contact_details_path,notice: "Thanks for Contact Us"
+
     else
       render :index
     end
