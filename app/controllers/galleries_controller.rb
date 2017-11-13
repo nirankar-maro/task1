@@ -3,7 +3,7 @@ class GalleriesController < ApplicationController
   before_action :set_photo, only: [:edit,:update,:destroy]
   def index
     @gallery = Gallery.new
-    @gallery_all = current_user.galleries
+    @gallery_all = current_user.galleries.page params[:page]
   end
 
   def create
