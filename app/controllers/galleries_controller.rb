@@ -12,6 +12,7 @@ class GalleriesController < ApplicationController
     if @gallery.save
       redirect_to galleries_path,notice: "Image Successfully Uploaded"
     else
+      @gallery_all = current_user.galleries.page params[:page]
       render :index
     end
   end
