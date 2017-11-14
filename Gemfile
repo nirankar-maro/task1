@@ -56,3 +56,4 @@ gem "gritter", "1.2.0"
 gem 'carrierwave', '~> 1.0'
 gem "font-awesome-rails"
 gem 'kaminari'
+gem 'activeadmin'
