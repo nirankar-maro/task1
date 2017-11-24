@@ -17,7 +17,6 @@
           <%else%>
           <% end%>
         <%= yield %>
-        <%= render "shared/notification" %>
         <% if login? %>
           <%= render  "shared/footer" %>
           <%else%>
@@ -25,5 +24,6 @@
       </div>
       </div>
     </div>
+    <%= render "shared/notification" %>
   </body>
 </html>
