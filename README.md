@@ -13,7 +13,7 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 - xLink on Email which redirected to new form ask new password and confirm password.
 - xmake password generate logic
 - xchange password option old password ,new password, confirm password
-- import csv feature on image name and image link
+- ximport csv feature on image name and image link
 
 ## Model
 - x User - Devise
@@ -21,7 +21,7 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 - xContactUs Form
 
 ## Feature
-- Workflow
+- xWorkflow
 - xgrowl notification
 - xactive_admin gem
 - xkaminari for pagination

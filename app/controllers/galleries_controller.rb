@@ -4,6 +4,11 @@ class GalleriesController < ApplicationController
   def index
     @gallery = Gallery.new
     @gallery_all = current_user.galleries.page params[:page]
+    respond_to do |format|
+      format.html
+      format.csv { send_data @gallery_all.to_csv, filename: "gallery-#{Date.today}.csv" }
+    end
+
   end
 
   def create
