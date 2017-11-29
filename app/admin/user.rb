@@ -19,10 +19,7 @@ ActiveAdmin.register User do
   form do |f|
     f.inputs do
       f.input :email
-       a = [*('a'..'z')].sample(2).join
-        b = [*(0 .. 9)].sample(7).join
-        c = [*('A' .. 'Z')].sample(1).join
-        d = a + b + c
+       d = User.new.password_genrator
         p d
        f.input :password, :as => :hidden, :input_html => {:value => d}
        f.input :password_confirmation, :as => :hidden, :input_html => {:value => d}

@@ -10,4 +10,12 @@ class User < ApplicationRecord
   def send_admin_mail
     UserMailer.welcome_email(self).deliver_now
   end
+
+  def password_genrator
+    a = [*('a'..'z')].sample(2).join
+     b = [*(0 .. 9)].sample(7).join
+     c = [*('A' .. 'Z')].sample(1).join
+     d = a + b + c
+     return d
+  end
 end
