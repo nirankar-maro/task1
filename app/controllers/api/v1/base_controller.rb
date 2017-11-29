@@ -11,13 +11,13 @@ class Api::V1::BaseController < ApplicationController
       if password != nil
         if @user.valid_password?(password)
         else
-          render json: {Err_msg: "Email or Password is Invalid",status: "Failure"}
+          render json: {Err_msg: "Email or Password is Invalid",status: "Failure"},code: 500
         end
       else
-        render json: {Err_msg: "Password is Invalid",status: "Failure"}
+        render json: {Err_msg: "Password is Invalid",status: "Failure"},code: 500
       end
     else
-      render json: {Err_msg: "Email is Invalid",status: "Failure"}
+      render json: {Err_msg: "Email is Invalid",status: "Failure"},code: 500
     end
   end
 

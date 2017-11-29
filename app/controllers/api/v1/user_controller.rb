@@ -7,10 +7,10 @@ class Api::V1::UserController < Api::V1::BaseController
     @user.password = d
     @user.password_confirmation =d
     if @user.save
-      render json: {Message: "Successful" ,status: "Success"}
+      render json: {Message: "Successful" ,status: "Success"},code: 200
 
     else
-      render json: {Err_msg: @user.errors.full_messages,status: "Failure"}
+      render json: {Err_msg: @user.errors.full_messages,status: "Failure"},code: 500
     end
   end
   private

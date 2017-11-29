@@ -8,10 +8,10 @@ class Api::V1::ContactDetailsController < Api::V1::BaseController
       Thread. new{
       @email.thankyou_mail(@contact_detail)
       }
-      render json: {Message: "Successful" ,status: "Success"}
+      render json: {Message: "Successful" ,status: "Success"},code: 200
 
     else
-      render json: {Err_msg: @contact_detail.errors.full_messages,status: "Failure"}
+      render json: {Err_msg: @contact_detail.errors.full_messages,status: "Failure"},code: 500
     end
   end
   private
