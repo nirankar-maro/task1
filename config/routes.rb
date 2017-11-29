@@ -10,5 +10,11 @@ Rails.application.routes.draw do
   end
 
   root to: "static#index"
+
+    namespace :api do
+        namespace :v1 do
+         post 'contact_us' => 'contact_details#create'
+       end
+     end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
