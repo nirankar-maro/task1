@@ -4,8 +4,8 @@ class Api::V1::BaseController < ApplicationController
   respond_to :json
   private
   def authenticate_user
-    email = params[:email]
-    password = params[:password]
+    email = params[:email] || request.headers["email"]
+    password = params[:password] || request.headers["password"]
     @user = User.find_by(email: email)
     if @user.present?
       if password != nil
