@@ -15,6 +15,8 @@ Rails.application.routes.draw do
         namespace :v1 do
          post 'contact_us' => 'contact_details#create'
          post 'user_create' => 'user#create'
+         post 'image_upload' => 'galleries#create'
+         get 'image_list' => 'galleries#index'
        end
      end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

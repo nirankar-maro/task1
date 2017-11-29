@@ -30,6 +30,6 @@ This is task 1 contain authentication with devise then have 3 pages Home Contact
 - XBootstrap -> formatting
 
 ## APIs
-- Image workflow
+- xImage workflow
 - xuser workflow
 - xContact us form
